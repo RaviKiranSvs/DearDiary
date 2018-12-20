@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    -X- const val TableName = "ENTRIES"
+    -X- const val ColumnID = "ID"
+    |-o const val ColumnDate = "DATE"       #
+    |- const val ColumnTopic = "TOPIC"      #
+    const val ColumnTitle = "TITLE"         #
+    X const val ColumnTime = "TIME"
+    ! const val ColumnContent = "CONTENT"   -->
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/titleColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:text="@string/sample_date_medium"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/boundaries"
+        app:layout_constraintStart_toEndOf="@id/tv_head"
+        app:layout_constraintEnd_toStartOf="@id/tv_sub"
+        app:layout_constraintTop_toTopOf="@id/tv_sub"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sub"/>
+
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titleColor"
+        app:layout_constraintTop_toTopOf="@id/tv_head"
+        app:layout_constraintBottom_toBottomOf="@id/tv_head"
+        app:layout_constraintStart_toEndOf="@id/tv_head"
+        android:layout_marginStart="16dp"
+        android:text="@string/sample_text_short"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/boundaries"
+        app:layout_constraintStart_toEndOf="@id/tv_sub"
+        app:layout_constraintEnd_toStartOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="@id/tv_sub"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sub"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_head"
+        app:layout_constraintBottom_toBottomOf="@id/tv_head"
+        app:layout_constraintStart_toEndOf="@id/tv_sub"
+        android:layout_marginStart="16dp"
+        android:text="@string/sample_text_short"/>
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/sample_multi_line"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_date" />
+</android.support.constraint.ConstraintLayout>

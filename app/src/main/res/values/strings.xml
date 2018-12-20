@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DearDiary</string>
+
+    <string name="sample_text_short">Sample Text</string>
+    <string name="sample_date_medium">App 89, 1755</string>
+    <string name="sample_multi_line">This app is amazing. It can help me put track of my daily activities.
+        \nCongratulating Modiji for launching the app.</string>
+
+    <string name="events">Events</string>
+    <string name="date_book">Date-Book</string>
+    <string name="cont">more…</string>
+    <string name="new_entry">New Entry:</string>
+    <string name="add">ADD</string>
+    <string name="add_2">+ Add New Entry</string>
+
+    <string name="topic_image">This image represents the corresponding topic.</string>
+
+    <!-- hints -->
+    <string name="hint_topic">new Topic</string>
+    <string name="hint_title">Add Title (optional)</string>
+    <string name="hint_content">What happened today?</string>
+</resources>
